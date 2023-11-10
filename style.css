@@ -8,78 +8,25 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'SmackBoom';
 }
 
 
-.button {
-    background-color:darkorange;
+button {
+    background-color:rgb(205, 202, 31);
+    font-family: 'SmackBoom';
 	border: 0;
     margin: 10px;
-    padding: 10px;
+    padding: 20px;
 	outline: none;
 	cursor: pointer;
-	font-size: 32px;
-	font-weight: 500;
+	font-size: 25px;
+    letter-spacing: 5px;
 	border-radius: 30px;
-	align-items:baseline;
-	justify-content: center;
-	text-align: center;
-	font-family:'SmackBoom' ;
-	color:gold ;
-    width: 400px;
-    position: fixed;
-    bottom: 72%;
-    left: 5%;
-    font-size: 50px;;
-}
-
-/* 
-#instructionbtn {
-	padding: 10px 60px;
-	margin: 10px;
-	background-color:darkorange;
-	border: 0;
-	outline: none;
-	cursor: pointer;
-	font-size: 32px;
-	font-weight: 500;
-    width: 400px;
-	border-radius: 30px;
-	align-items:baseline;
 	justify-content: center;
 	font-family:'SmackBoom' ;
-	color:gold ;
-	position: fixed;
-    bottom: 55%;
-    left: 15%;
 }
 
-.popup {
-	width: 400px;
-	background-color: coral;
-	border-radius: 6px;
-	position: absolute;
-	top: 40%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	text-align: center;
-	padding: 0 30px 30px;
-	color:floralwhite ;
-	font-size: 20px;
-	font-family:'SmackBoom' ;
-	font-weight: lighter;
-	visibility: hidden;
-	transition: transform 0.4s, top 0.4s;
-}
-
-.open-popup{
-	visibility: visible;
-}
-
-.popup h2 {
-	text-align: center;
-	margin-top: 10px;
-} */
 
 body {
     background-color:black;
@@ -98,6 +45,15 @@ body {
     max-height: 100%;
     width: 500px;
     height: 375px;
+}
+#rathome {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    max-height: 100%;
+    top: 60%;
+    width: 500px;
+    height: 300px;
 }
 
 #Cat {
@@ -169,32 +125,77 @@ body {
     bottom: 3%;
     left: 67%;
 } 
-#music1 {
-    background-color: gold;
-    border-radius: 5px;
-    margin: 50px;
-    padding: 10px;
-    position: fixed;
-    bottom: 10%;
-    left: 1%;
-} 
 
 .instructions {
     font-family: 'SmackBoom';
     text-align: center;
-    color: gold;
-    border: 7px solid gold;
+    text-shadow: white;
     font-weight: lighter;
     padding: 20px 20px;
     font-size: 20px;
-    width: 1000px;
-    height: 300px;
-    position: fixed;
-    bottom: 5%;
-    left: 30%;
 }
-.instructionscontainer {
-    background-color: darkorange;
+
+#start {
+	padding: 10px 60px;
+	margin: 10px;
+	background-color:rgb(205, 202, 31);
+	border: 0;
+	outline: none;
+	cursor: pointer;
+	font-size: 32px;
+	font-weight: 500;
+	border-radius: 30px;
+}
+
+#instructionbtn {
+	padding: 10px 60px;
+	margin: 10px;
+	background-color:rgb(205, 202, 31);
+	border: 0;
+	outline: none;
+	cursor: pointer;
+	font-size: 32px;
+	font-weight: 500;
+	border-radius: 30px;
+	align-items:baseline;
+	justify-content: center;
+}
+
+.popup {
+	width: 700px;
+	background-color: rgb(82, 33, 58);
+	border-radius: 5px;
+    justify-content: center;
+	position: absolute;
+	cursor: pointer;
+	text-align: center;
+    letter-spacing: 5px;
+    border-radius: 10%;
+	padding: 30px 30px 30px;
+	color:floralwhite ;
+	font-size: 20px;
+	font-weight: lighter;
+	visibility: hidden;
+	transition: transform 0.4s, top 0.4s;
+}
+.homescreen button {
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	max-height: fit-content;
+}
+
+.open-popup{
+	visibility: visible;
+    justify-content: center;
+    left: 25%;
+    right: 25%;
+    position: absolute;
+}
+
+.popup h2 {
+	text-align: center;
+	margin-top: 10px;
 }
 
 
